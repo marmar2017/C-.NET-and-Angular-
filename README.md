@@ -4,21 +4,20 @@ A full-stack application built with Angular (frontend) and ASP.NET Core (backend
 ---
 ## 🚀 How to Run the App
 
-1. **Clone the repository:**
-   ```bsh
+1. ## Clone the repository: 
+
    git clone 'use Url here'
    cd your-repo/C-.NET-and-Angular
- ```bsh
-   2. ** Start the application using Docker Compose
-   
-  ```bsh
+
+2. ## Start the application using Docker Compose
+
    docker-compose up --build
- ```bsh
-3. *Wait for Docker to build the images and start the containers.*
 
-4. *Access the application in your browser:*
- ```bsh
- Frontend: http://localhost:4200
+3.  ## Wait for Docker to build the images and start the containers.
 
- Backend (Swagger UI): http://localhost:8080/swagger/index.html
- ```bsh
+4. ## Access the application in your browser:
+
+    Frontend: http://localhost:4200
+
+    Backend (Swagger UI): http://localhost:8080/swagger/index.html
+
