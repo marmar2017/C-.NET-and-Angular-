@@ -8,6 +8,10 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080);
+});
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
@@ -33,16 +37,23 @@ builder.Services.AddHostedService<CoffeeOrderHostedService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-//enabled Swagger (OpenAPI) using built-in support
-if (app.Environment.IsDevelopment())
+using (var scope = app.Services.CreateScope())
 {
-    app.UseSwagger();
-
-    app.UseSwaggerUI();
+    var db = scope.ServiceProvider.GetRequiredService<CoffeeOrderDbContext>();
+    db.Database.Migrate();
 }
 
-app.UseHttpsRedirection();
+
+// Configure the HTTP request pipeline.
+//enabled Swagger (OpenAPI) using built-in support
+//if (app.Environment.IsDevelopment())
+//{
+app.UseSwagger();
+
+app.UseSwaggerUI();
+//}
+
+//app.UseHttpsRedirection();
 app.UseCors(policy =>
 {
     policy.AllowAnyOrigin()

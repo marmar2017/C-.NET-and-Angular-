@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿//basic Entity Framework Core database context
+
+using Microsoft.EntityFrameworkCore;
 using coffeeOrder.Models;
 
 namespace coffeeOrder.Data

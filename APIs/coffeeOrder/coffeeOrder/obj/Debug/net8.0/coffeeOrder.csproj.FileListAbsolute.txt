@@ -322,3 +322,4 @@ C:\Users\edala\OneDrive\Pictures\Documents\document\allAboutMaryam\CoffeeOrder\A
 C:\Users\edala\OneDrive\Pictures\Documents\document\allAboutMaryam\CoffeeOrder\ABC Coffee\APIs\coffeeOrder\coffeeOrder\obj\Debug\net8.0\coffeeOrder.pdb
 C:\Users\edala\OneDrive\Pictures\Documents\document\allAboutMaryam\CoffeeOrder\ABC Coffee\APIs\coffeeOrder\coffeeOrder\obj\Debug\net8.0\coffeeOrder.genruntimeconfig.cache
 C:\Users\edala\OneDrive\Pictures\Documents\document\allAboutMaryam\CoffeeOrder\ABC Coffee\APIs\coffeeOrder\coffeeOrder\obj\Debug\net8.0\ref\coffeeOrder.dll
+C:\Users\edala\OneDrive\Pictures\Documents\document\allAboutMaryam\CoffeeOrder\ABC Coffee\APIs\coffeeOrder\coffeeOrder\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

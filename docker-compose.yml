@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+    backend:
+        build:
+            context: ./APIs/CoffeeOrder/coffeeOrder
+        ports:
+            - "8080:8080"
+        networks:
+            - coffee-network
+
+    frontend:
+        build:
+            context: ./UIs/coffee-order
+        ports:
+            - "4200:80"
+        depends_on:
+            - backend
+        networks:
+            - coffee-network
+
+networks:
+    coffee-network:
