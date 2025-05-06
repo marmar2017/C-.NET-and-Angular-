@@ -1,0 +1,94 @@
+<div class="min-h-screen flex items-center justify-center p-2">
+
+    <div *ngIf="!isTrackingOrder">
+        <form (ngSubmit)="submitOrder()" #orderForm="ngForm">
+            <h2 class="text-2xl font-bold text-center text-neutral mb-10"> Welcome ABC Coffee! </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="form-control w-full">
+                    <label class="label"><span class="label-text">Size</span></label>
+                    <select [(ngModel)]="order.size" name="size" required
+                        class="select select-bordered text-gray-900 invalid:text-gray-400">
+                        <option value="" disabled selected hidden>Select size</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+                </div>
+
+                <div class="form-control w-full">
+                    <label class="label"><span class="label-text">Coffee Type</span></label>
+                    <select [(ngModel)]="order.coffeeType" name="coffeeType" required
+                        class="select select-bordered text-gray-900 invalid:text-gray-400">
+                        <option disabled selected value="">Select your coffee type</option>
+                        <option>Latte</option>
+                        <option>Espresso</option>
+                        <option>Cappuccino</option>
+                    </select>
+                </div>
+                <div class="form-control w-full">
+                    <label class="label"><span class="label-text">Milk Type</span></label>
+                    <select [(ngModel)]="order.milkType" name="milkType" required
+                        class="select select-bordered text-gray-900 invalid:text-gray-400">
+                        <option value="" disabled selected hidden class="text-gray-400">Select milk</option>
+                        <option>Whole</option>
+                        <option>Skim</option>
+                        <option>Oat</option>
+                        <option>Almond</option>
+                        <option>Soy</option>
+                        <option>None</option>
+                    </select>
+                </div>
+
+                <div class="form-control w-full">
+                    <label class="label"><span class="label-text">Sugar Count</span></label>
+                    <input [(ngModel)]="order.sugarCount" required name="sugarCount" type="number" min="0" max="10"
+                        class="input input-bordered" />
+                </div>
+
+                <div class="form-control w-full">
+                    <label class="label"><span class="label-text">Temperature</span></label>
+                    <select [(ngModel)]="order.temperature" name="temperature"
+                        class="select select-bordered text-gray-900 invalid:text-gray-400">
+                        <option selected value="Hot">Hot</option>
+                        <option>Iced</option>
+
+                    </select>
+                </div>
+
+                <div class="form-control w-full">
+                    <label class="label"><span class="label-text">Notes</span></label>
+                    <textarea [(ngModel)]="order.notes" name="notes" class="textarea textarea-bordered"
+                        rows="2"></textarea>
+                </div>
+            </div>
+
+            <div class="form-control mb-5">
+                <label class="label cursor-pointer">
+                    <span class="label-text ">Extra Shot</span>
+                    <input [(ngModel)]="order.extraShot" name="extraShot" type="checkbox"
+                        class="checkbox checkbox-success" />
+                </label>
+            </div>
+
+            <div class="form-control">
+                <button type="submit" class="btn bg-amber-500 w-full" [disabled]="!orderForm.valid">Submit
+                    Order</button>
+
+            </div>
+        </form>
+    </div>
+
+    <div *ngIf="isTrackingOrder" class="text-center mt-10">
+        <app-lottie-animation></app-lottie-animation>
+
+    </div>
+    <div class="toast toast-top toast-center" *ngIf="toastMessage">
+        <div class="alert alert-info shadow-lg">
+            <span>{{ toastMessage }}</span>
+        </div>
+    </div>
+
+
+
+</div>
