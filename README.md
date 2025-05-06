@@ -7,15 +7,16 @@ A full-stack application built with Angular (frontend) and ASP.NET Core (backend
 1. ## Clone the repository: 
 
    git clone 'use Url here'
+
    cd your-repo/C-.NET-and-Angular
 
-2. ## Start the application using Docker Compose
+3. ## Start the application using Docker Compose
 
    docker-compose up --build
 
-3.  ## Wait for Docker to build the images and start the containers.
+4.  ## Wait for Docker to build the images and start the containers.
 
-4. ## Access the application in your browser:
+5. ## Access the application in your browser:
 
     Frontend: http://localhost:4200
 
