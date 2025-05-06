@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uv/BoQvUop8=",
+  "dgSpecHash": "pm+hy28AALk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\try1\\APIs\\CoffeeOrder\\coffeeOrder\\coffeeOrder.csproj",
+  "projectFilePath": "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\ABC Coffee\\APIs\\coffeeOrder\\coffeeOrder\\coffeeOrder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edala\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\edala\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

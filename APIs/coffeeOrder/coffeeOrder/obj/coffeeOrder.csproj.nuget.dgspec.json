@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\try1\\APIs\\CoffeeOrder\\coffeeOrder\\coffeeOrder.csproj": {}
+    "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\ABC Coffee\\APIs\\coffeeOrder\\coffeeOrder\\coffeeOrder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\try1\\APIs\\CoffeeOrder\\coffeeOrder\\coffeeOrder.csproj": {
+    "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\ABC Coffee\\APIs\\coffeeOrder\\coffeeOrder\\coffeeOrder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\try1\\APIs\\CoffeeOrder\\coffeeOrder\\coffeeOrder.csproj",
+        "projectUniqueName": "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\ABC Coffee\\APIs\\coffeeOrder\\coffeeOrder\\coffeeOrder.csproj",
         "projectName": "coffeeOrder",
-        "projectPath": "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\try1\\APIs\\CoffeeOrder\\coffeeOrder\\coffeeOrder.csproj",
+        "projectPath": "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\ABC Coffee\\APIs\\coffeeOrder\\coffeeOrder\\coffeeOrder.csproj",
         "packagesPath": "C:\\Users\\edala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\try1\\APIs\\CoffeeOrder\\coffeeOrder\\obj\\",
+        "outputPath": "C:\\Users\\edala\\OneDrive\\Pictures\\Documents\\document\\allAboutMaryam\\CoffeeOrder\\ABC Coffee\\APIs\\coffeeOrder\\coffeeOrder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
