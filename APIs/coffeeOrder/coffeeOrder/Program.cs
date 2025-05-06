@@ -15,6 +15,7 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
 
+// Configured CoffeeOrderDbContext using DbContextOptions
 builder.Services.AddDbContext<CoffeeOrderDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -33,9 +34,11 @@ builder.Services.AddHostedService<CoffeeOrderHostedService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+//enabled Swagger (OpenAPI) using built-in support
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
+
     app.UseSwaggerUI();
 }
 

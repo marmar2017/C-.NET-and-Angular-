@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿//This model represents the structure of data submitted by the user through the frontend form. 
+//It contains fields like Size, CoffeeType, MilkType, SugarCount, Temperature, etc.
+
+using System.ComponentModel.DataAnnotations;
 
 namespace coffeeOrder.Models
 {
@@ -14,7 +17,7 @@ namespace coffeeOrder.Models
         public int SugarCount { get; set; } = 1; // Number of sugar units
         [Required]
         public bool ExtraShot { get; set; } // Whether to add an extra espresso shot
-        
+
         public string Temperature { get; set; } // Options: Hot, Iced
         public string? Notes { get; set; }  // Any special instructions
     }

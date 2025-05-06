@@ -39,7 +39,7 @@ export class OrderFormComponent {
     this.successMessage = '';
     this.toastMessage = '';
 
-    this.http.post<any>('https://localhost:7259/orders', this.order).subscribe({
+    this.http.post<any>('http://localhost:5120/orders', this.order).subscribe({
       next: (res) => {
         this.loading = false;
         this.toastMessage = 'Your Order placed. Waiting for preparation...';
@@ -66,7 +66,7 @@ export class OrderFormComponent {
     this.pollSub?.unsubscribe();
 
     this.pollSub = interval(3000).subscribe(() => {
-      this.http.get<any>(`https://localhost:7259/orders/${id}`).subscribe({
+      this.http.get<any>(`http://localhost:5120/orders/${id}`).subscribe({
         next: (res) => {
           const status = res.status;
 
