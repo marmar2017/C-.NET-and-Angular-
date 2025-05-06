@@ -1,5 +1,4 @@
 <div class="min-h-screen flex items-center justify-center p-2">
-
     <div *ngIf="!isTrackingOrder">
         <form (ngSubmit)="submitOrder()" #orderForm="ngForm">
             <h2 class="text-2xl font-bold text-center text-neutral mb-10"> Welcome ABC Coffee! </h2>
@@ -72,7 +71,8 @@
             </div>
 
             <div class="form-control">
-                <button type="submit" class="btn bg-amber-500 w-full" [disabled]="!orderForm.valid">Submit
+                <button type="submit" class="btn bg-amber-500 w-full hover:bg-amber-600"
+                    [disabled]="!orderForm.valid">Submit
                     Order</button>
 
             </div>

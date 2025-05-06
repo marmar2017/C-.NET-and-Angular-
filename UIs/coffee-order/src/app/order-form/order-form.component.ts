@@ -53,7 +53,7 @@ export class OrderFormComponent {
       error: (err) => {
         this.loading = false;
         console.error('Order submission failed:', err);
-        this.toastMessage = 'Something went wrong. Please try again.';
+        this.toastMessage = 'Oops something went wrong while you place your order please try later!';
         this.clearToastAfterDelay();
       }
     });
